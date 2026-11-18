@@ -1,0 +1,1099 @@
+[casa_luthier_cuerdas_instrumentos_de_alta_gama (1.0).html](https://github.com/user-attachments/files/35002497/casa_luthier_cuerdas_instrumentos_de_alta_gama.1.0.html)
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Luthier & Cuerdas — Instrumentos de Alta Gama</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fbf8ee',
+                            100: '#f3ebd4',
+                            200: '#e5d3a9',
+                            300: '#d5b778',
+                            400: '#c59d52',
+                            500: '#b08439',
+                            600: '#946a2e',
+                            700: '#775227',
+                            800: '#624222',
+                            900: '#52371f',
+                            950: '#2e1e0f',
+                        },
+                        darkBg: '#0c0a09',
+                        cardBg: '#171412',
+                        cardBorder: '#292524'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome & Lucide Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0c0a09;
+            color: #f5f5f4;
+        }
+        h1, h2, h3, h4, .font-luxury {
+            font-family: 'Cinzel', serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0a09;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #292524;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b08439;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3ebd4 0%, #c59d52 50%, #b08439 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #c59d52 0%, #b08439 100%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-darkBg">
+
+    <!-- =====================================================================
+         CONFIGURACIÓN RÁPIDA DE LA TIENDA (EDITABLE POR EL PROPIETARIO)
+         ===================================================================== -->
+    <script>
+        const CONFIGURACION_TIENDA = {
+            nombreTienda: "Casa Luthier & Cuerdas",
+            subtituloTienda: "Instrumentos de Alta Gama",
+            monedaPorDefecto: "S/",
+            // Número de WhatsApp con código de país (sin signos + ni espacios). Ej: 51987654321
+            numeroWhatsApp: "51987654321",
+            correoContacto: "ventas@casaluthierycuerdas.com",
+            // Lista de cuentas bancarias oficiales (puede agregar, editar o eliminar bancos libremente)
+            bancos: [
+                {
+                    banco: "Banco de Crédito del Perú (BCP)",
+                    tipoCuenta: "Cuenta Corriente Soles",
+                    titular: "Casa Luthier & Cuerdas S.A.C.",
+                    ruc: "20608492715",
+                    numeroCuenta: "193-98451203-1-44",
+                    cci: "002-193-009845120314-48"
+                },
+                {
+                    banco: "BBVA Continental",
+                    tipoCuenta: "Cuenta Corriente Soles / Dólares",
+                    titular: "Casa Luthier & Cuerdas S.A.C.",
+                    ruc: "20608492715",
+                    numeroCuenta: "0011-0184-0100084521",
+                    cci: "011-184-000100084521-92"
+                },
+                {
+                    banco: "Interbank",
+                    tipoCuenta: "Cuenta Empresarial Soles",
+                    titular: "Casa Luthier & Cuerdas S.A.C.",
+                    ruc: "20608492715",
+                    numeroCuenta: "200-3004892154",
+                    cci: "003-200-003004892154-35"
+                },
+                {
+                    banco: "Yape / Plin Corporativo",
+                    tipoCuenta: "Transferencia Inmediata (Celular)",
+                    titular: "Casa Luthier & Cuerdas S.A.C.",
+                    ruc: "20608492715",
+                    numeroCuenta: "987 654 321",
+                    cci: "Disponible para pago QR o directorio"
+                }
+            ]
+        };
+    </script>
+
+    <!-- Barra de Navegación Superior -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-stone-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Identidad de Marca -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-full border border-gold-400/50 flex items-center justify-center bg-gold-950/40 group-hover:border-gold-400 transition-colors">
+                    <i class="fa-solid fa-guitar text-gold-400 text-lg"></i>
+                </div>
+                <div>
+                    <span class="block font-luxury text-base sm:text-xl font-bold tracking-wider text-white">CASA LUTHIER & CUERDAS</span>
+                    <span class="block text-[10px] tracking-[0.22em] text-gold-400 font-semibold uppercase">Instrumentos de Alta Gama</span>
+                </div>
+            </a>
+
+            <!-- Enlaces de Navegación Escritorio -->
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-widest text-stone-300">
+                <a href="#catalogo" class="hover:text-gold-400 transition-colors">CATÁLOGO</a>
+                <a href="#taller" class="hover:text-gold-400 transition-colors">TALLER DE LUTERÍA</a>
+                <a href="#garantia" class="hover:text-gold-400 transition-colors">GARANTÍA Y ENVÍOS</a>
+                <a href="#contacto" class="hover:text-gold-400 transition-colors">ATENCIÓN PRIVADA</a>
+            </nav>
+
+            <!-- Botón de Carrito / Cotizador y Menú Móvil -->
+            <div class="flex items-center space-x-3">
+                <button onclick="abrirCerrarCarrito(true)" class="relative px-3.5 py-2.5 rounded-xl bg-stone-900 border border-stone-700 hover:border-gold-400 text-stone-200 hover:text-gold-400 transition-all flex items-center space-x-2.5 shadow-md">
+                    <i class="fa-solid fa-bag-shopping text-base text-gold-400"></i>
+                    <span class="hidden sm:inline text-xs font-bold tracking-wider uppercase">Mi Carrito</span>
+                    <span id="contador-carrito" class="bg-gold-500 text-darkBg font-extrabold text-[11px] w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+                </button>
+
+                <button onclick="alternarMenuMovil()" aria-label="Abrir menú" class="lg:hidden p-2.5 rounded-xl bg-stone-900 border border-stone-800 text-stone-300 hover:text-gold-400">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="menu-movil" class="hidden lg:hidden bg-cardBg border-b border-stone-800 px-6 py-5 space-y-3">
+            <a href="#catalogo" onclick="alternarMenuMovil()" class="block text-xs font-semibold tracking-widest text-stone-300 hover:text-gold-400 py-1.5">CATÁLOGO DE INSTRUMENTOS</a>
+            <a href="#taller" onclick="alternarMenuMovil()" class="block text-xs font-semibold tracking-widest text-stone-300 hover:text-gold-400 py-1.5">TALLER DE LUTERÍA</a>
+            <a href="#garantia" onclick="alternarMenuMovil()" class="block text-xs font-semibold tracking-widest text-stone-300 hover:text-gold-400 py-1.5">GARANTÍA Y ENVÍOS</a>
+            <a href="#contacto" onclick="alternarMenuMovil()" class="block text-xs font-semibold tracking-widest text-stone-300 hover:text-gold-400 py-1.5">ATENCIÓN PRIVADA</a>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="relative min-h-[88vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1510915361894-db8b6010cb61?auto=format&fit=crop&w=2000&q=85" alt="Guitarra artesanal de alta gama" class="w-full h-full object-cover opacity-25">
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/80 to-darkBg/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-gold-950/70 border border-gold-500/30 text-gold-300 text-xs tracking-[0.2em] mb-6 uppercase">
+                <i class="fa-solid fa-award text-gold-400"></i>
+                <span>Colección Curada para Músicos e Intérpretes</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-luxury tracking-wide text-white mb-6 leading-tight">
+                Excelencia Acústica y <br/><span class="gold-gradient-text">Artesanía de Concierto</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-stone-300 text-sm sm:text-lg font-light leading-relaxed mb-10">
+                Especialistas en guitarras eléctricas, electroacústicas, clásicas de lutería, bajos profesionales e instrumentos de cámara. Cada pieza cuenta con certificación de origen, calibración de taller y asesoría personalizada.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#catalogo" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-darkBg font-bold text-xs sm:text-sm tracking-widest uppercase hover:opacity-90 transition-all shadow-xl shadow-gold-500/10 flex items-center justify-center space-x-3">
+                    <span>Explorar Catálogo</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <button onclick="contactarAsesorDirecto()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-900/90 border border-stone-700 hover:border-gold-400 text-white font-semibold text-xs sm:text-sm tracking-widest uppercase transition-all flex items-center justify-center space-x-3">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                    <span>Asesoría por WhatsApp</span>
+                </button>
+            </div>
+
+            <!-- Pilares de Confianza -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-10 border-t border-stone-800/80 text-left">
+                <div class="space-y-1">
+                    <div class="text-gold-400 font-luxury text-xl sm:text-2xl font-bold">Maderas Nobles</div>
+                    <div class="text-xs text-stone-400">Abeto Sitka, Caoba, Ébano y Palisandro seleccionados</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-gold-400 font-luxury text-xl sm:text-2xl font-bold">Ajuste de Taller</div>
+                    <div class="text-xs text-stone-400">Octavación y acción calibradas antes de cada entrega</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-gold-400 font-luxury text-xl sm:text-2xl font-bold">Trato Directo</div>
+                    <div class="text-xs text-stone-400">Cotización personalizada y atención sin intermediarios</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-gold-400 font-luxury text-xl sm:text-2xl font-bold">Envío Asegurado</div>
+                    <div class="text-xs text-stone-400">Embalaje térmico rígido con cobertura nacional e internacional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Catálogo Principal -->
+    <section id="catalogo" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase mb-3 block">Selección Disponible</span>
+            <h2 class="text-3xl sm:text-5xl font-bold font-luxury text-white mb-4">Catálogo de Instrumentos</h2>
+            <p class="text-stone-400 text-sm sm:text-base">
+                Explore nuestros instrumentos con precio directo de sala o piezas exclusivas bajo cotización. Agregue los modelos a su carrito para calcular su pedido o solicitar asesoría personalizada.
+            </p>
+        </div>
+
+        <!-- Barra de Búsqueda y Filtros por Categoría -->
+        <div class="space-y-6 mb-12">
+            <!-- Buscador -->
+            <div class="max-w-xl mx-auto relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 text-sm"></i>
+                <input 
+                    type="text" 
+                    id="buscador-instrumentos" 
+                    oninput="aplicarFiltros()" 
+                    placeholder="Buscar por modelo, madera, marca o tipo de instrumento..." 
+                    class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-cardBg border border-stone-800 focus:border-gold-500 focus:outline-none text-sm text-white placeholder-stone-500 transition-colors"
+                >
+            </div>
+
+            <!-- Botones de Categoría -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5">
+                <button onclick="seleccionarCategoria('todos')" id="cat-todos" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-bold tracking-wider uppercase transition-all bg-gold-500 text-darkBg shadow-md shadow-gold-500/20">
+                    Todos los Instrumentos
+                </button>
+                <button onclick="seleccionarCategoria('electrica')" id="cat-electrica" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50">
+                    Guitarras Eléctricas
+                </button>
+                <button onclick="seleccionarCategoria('electroacustica')" id="cat-electroacustica" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50">
+                    Electroacústicas
+                </button>
+                <button onclick="seleccionarCategoria('clasica')" id="cat-clasica" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50">
+                    Clásicas de Concierto
+                </button>
+                <button onclick="seleccionarCategoria('bajo')" id="cat-bajo" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50">
+                    Bajos Profesionales
+                </button>
+                <button onclick="seleccionarCategoria('otros')" id="cat-otros" class="btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50">
+                    Cuerdas, Pianos y Percusión
+                </button>
+            </div>
+        </div>
+
+        <!-- Cuadrícula de Productos -->
+        <div id="cuadricula-productos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Renderizado dinámicamente mediante JavaScript -->
+        </div>
+
+        <!-- Mensaje cuando no hay coincidencias de búsqueda -->
+        <div id="sin-resultados" class="hidden text-center py-16 bg-cardBg rounded-2xl border border-stone-800">
+            <i class="fa-solid fa-guitar text-3xl text-stone-600 mb-3"></i>
+            <h3 class="font-luxury text-lg text-white mb-1">No se encontraron instrumentos con ese criterio</h3>
+            <p class="text-xs text-stone-400 mb-4">Intente con otro término o restablezca los filtros para explorar toda nuestra colección.</p>
+            <button onclick="restablecerFiltros()" class="px-5 py-2.5 rounded-xl bg-gold-500 text-darkBg font-bold text-xs uppercase tracking-wider">
+                Ver Catálogo Completo
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Taller de Lutería -->
+    <section id="taller" class="py-24 bg-stone-950 border-y border-stone-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gold-500/10 rounded-2xl blur-xl"></div>
+                    <img src="https://images.unsplash.com/photo-1556449895-a33c9dba33dd?auto=format&fit=crop&w=1000&q=80" alt="Taller de lutería y ajuste fino de guitarras" class="relative rounded-2xl border border-stone-800 object-cover w-full h-[430px]" onerror="this.src='https://placehold.co/1000x700/171412/c59d52?text=Taller+de+Luteria'">
+                </div>
+                <div class="space-y-6">
+                    <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase">Compromiso Artesanal</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-luxury text-white">Inspección Acústica y Calibración de Precisión</h2>
+                    <p class="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
+                        En <strong>Casa Luthier & Cuerdas</strong> cada instrumento es evaluado individualmente antes de ingresar a nuestra sala de exhibición. Revisamos la estabilidad del mástil, el nivelado de trastes, la resonancia natural de la caja y la respuesta dinámica de cada cápsula o micrófono.
+                    </p>
+                    <p class="text-stone-400 text-sm font-light leading-relaxed">
+                        Al solicitar su cotización, puede indicarnos el calibre de cuerdas y la altura de acción de su preferencia para entregarle el instrumento listo para el escenario o el estudio de grabación.
+                    </p>
+                    <div class="pt-4 flex flex-wrap items-center gap-6 border-t border-stone-800/80">
+                        <div>
+                            <span class="block font-luxury text-lg font-bold text-white">Dirección Técnica</span>
+                            <span class="text-xs text-gold-400 tracking-wider">Maestro Luthier Sebastián Mendoza</span>
+                        </div>
+                        <div class="hidden sm:block h-10 w-px bg-stone-800"></div>
+                        <div class="text-xs text-stone-400 italic max-w-xs">
+                            "El carácter de un buen instrumento se revela en la comodidad de su tacto y la pureza de sus armónicos."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Garantía y Modalidades de Adquisición -->
+    <section id="garantia" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase mb-3 block">Respaldo Integral</span>
+            <h2 class="text-3xl sm:text-5xl font-bold font-luxury text-white mb-4">Garantía y Proceso de Reserva</h2>
+            <p class="text-stone-400 text-sm sm:text-base">Transparencia, seguridad financiera y acompañamiento técnico en cada paso de su compra.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl bg-cardBg border border-cardBorder hover:border-gold-500/40 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-gold-950/60 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl mb-6">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <h3 class="text-lg font-bold font-luxury text-white mb-3">Cotización Personalizada</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">
+                    Trabajamos con precios actualizados según especificaciones, estuche incluido y tipo de cambio vigente. Reciba una proforma formal al instante vía WhatsApp.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-cardBg border border-cardBorder hover:border-gold-500/40 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-gold-950/60 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl mb-6">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <h3 class="text-lg font-bold font-luxury text-white mb-3">Reserva Bancaria Segura</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">
+                    Realice transferencias directas a nuestras cuentas corporativas verificadas para separar su instrumento o completar el pago con total respaldo documental.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-cardBg border border-cardBorder hover:border-gold-500/40 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-gold-950/60 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl mb-6">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3 class="text-lg font-bold font-luxury text-white mb-3">Despacho Protegido</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">
+                    Enviamos a todo el país y al extranjero en cajas reforzadas con control de impacto y seguro contra todo riesgo hasta la puerta de su domicilio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Atención Privada y Contacto -->
+    <section id="contacto" class="py-20 bg-stone-950 border-t border-stone-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase mb-3 block">Canales Oficiales</span>
+            <h2 class="text-3xl sm:text-4xl font-bold font-luxury text-white mb-5">¿Desea Consultar un Modelo Específico?</h2>
+            <p class="text-stone-300 text-sm sm:text-base mb-10 max-w-2xl mx-auto">
+                Si busca una edición especial, un pedido bajo encargo o desea revisar nuestras cuentas bancarias para realizar una reserva directa, estamos a su disposición.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="contactarAsesorDirecto()" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-darkBg font-bold text-xs sm:text-sm tracking-widest uppercase hover:opacity-90 transition-all shadow-xl flex items-center justify-center space-x-3">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hablar con un Asesor</span>
+                </button>
+                <button onclick="abrirModalBanco()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-900 border border-stone-700 hover:border-gold-400 text-white font-semibold text-xs sm:text-sm tracking-widest uppercase transition-all flex items-center justify-center space-x-3">
+                    <i class="fa-solid fa-building-columns text-gold-400"></i>
+                    <span>Ver Datos de Cuenta Bancaria</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-darkBg border-t border-stone-900 py-12 text-stone-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full border border-gold-400/30 flex items-center justify-center bg-gold-950/20">
+                    <i class="fa-solid fa-guitar text-gold-400 text-xs"></i>
+                </div>
+                <span class="font-luxury text-white font-semibold tracking-wider">CASA LUTHIER & CUERDAS — INSTRUMENTOS DE ALTA GAMA</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#catalogo" class="hover:text-gold-400 transition-colors">Catálogo</a>
+                <a href="#taller" class="hover:text-gold-400 transition-colors">Taller</a>
+                <a href="#garantia" class="hover:text-gold-400 transition-colors">Garantía</a>
+                <button onclick="abrirModalBanco()" class="hover:text-gold-400 transition-colors">Datos Bancarios</button>
+            </div>
+            <div>
+                &copy; 2026 Casa Luthier & Cuerdas. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         PANEL LATERAL DEL CARRITO DE COMPRAS Y COTIZACIÓN
+         ===================================================================== -->
+    <div id="panel-carrito" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-darkBg/80 backdrop-blur-sm transition-opacity" onclick="abrirCerrarCarrito(false)"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-6 sm:pl-10">
+            <div class="w-screen max-w-md bg-cardBg border-l border-stone-800 flex flex-col shadow-2xl">
+                <!-- Cabecera del Carrito -->
+                <div class="p-6 border-b border-stone-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-bag-shopping text-gold-400 text-xl"></i>
+                        <div>
+                            <h3 class="font-luxury font-bold text-base sm:text-lg text-white">Carrito de Compra y Cotización</h3>
+                            <span class="block text-[11px] text-stone-400">Detalle de instrumentos seleccionados</span>
+                        </div>
+                    </div>
+                    <button onclick="abrirCerrarCarrito(false)" aria-label="Cerrar panel" class="p-2 rounded-lg text-stone-400 hover:text-white hover:bg-stone-800 transition-colors">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+
+                <!-- Lista de Instrumentos Seleccionados -->
+                <div class="flex-1 overflow-y-auto p-6 space-y-4" id="lista-items-carrito">
+                    <!-- Renderizado dinámicamente -->
+                </div>
+
+                <!-- Resumen y Opciones de Finalización -->
+                <div class="p-6 border-t border-stone-800 bg-stone-950 space-y-3.5">
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="text-stone-400">Cantidad total:</span>
+                        <span id="resumen-cantidad-total" class="font-bold text-white">0 unidades</span>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-stone-900/90 border border-stone-800 space-y-1">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold text-stone-300">Subtotal (Precios Fijos):</span>
+                            <span id="resumen-subtotal" class="font-luxury text-base sm:text-lg font-bold text-gold-400">S/ 0.00</span>
+                        </div>
+                        <div id="resumen-nota-cotizacion" class="hidden text-[11px] text-amber-300/90 flex items-center space-x-1.5 pt-1 border-t border-stone-800/80">
+                            <i class="fa-solid fa-circle-info text-gold-400"></i>
+                            <span id="texto-nota-cotizacion">+ 0 artículos por cotizar</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2.5 pt-1">
+                        <!-- Opción A: WhatsApp -->
+                        <button onclick="finalizarPorWhatsApp()" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs tracking-wider uppercase transition-all flex items-center justify-center space-x-2.5 shadow-lg shadow-emerald-950/50">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Confirmar Pedido / Cotizar por WhatsApp</span>
+                        </button>
+
+                        <!-- Opción B: Transferencia Bancaria / Reserva Directa -->
+                        <button onclick="abrirModalBanco()" class="w-full py-3.5 px-4 rounded-xl bg-stone-900 border border-gold-500/40 hover:border-gold-400 text-gold-300 hover:text-white font-bold text-xs tracking-wider uppercase transition-all flex items-center justify-center space-x-2.5">
+                            <i class="fa-solid fa-building-columns text-gold-400"></i>
+                            <span>Pagar / Reservar por Transferencia Bancaria</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         MODAL DE DATOS BANCARIOS Y RESERVA DIRECTA (MÚLTIPLES BANCOS)
+         ===================================================================== -->
+    <div id="modal-banco" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="absolute inset-0 bg-darkBg/85 backdrop-blur-sm" onclick="cerrarModalBanco()"></div>
+        <div class="relative bg-cardBg border border-gold-500/40 rounded-2xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-5 max-h-[92vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold-950/60 border border-gold-500/30 flex items-center justify-center text-gold-400">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury font-bold text-lg text-white">Cuentas Bancarias Oficiales</h3>
+                        <span class="text-[11px] text-gold-400">Transferencia Directa y Reserva de Instrumentos</span>
+                    </div>
+                </div>
+                <button onclick="cerrarModalBanco()" aria-label="Cerrar ventana" class="p-2 text-stone-400 hover:text-white">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Resumen del Carrito dentro del Modal Bancario (si tiene productos) -->
+            <div id="resumen-banco-carrito" class="hidden p-4 rounded-xl bg-stone-950 border border-gold-500/30 space-y-2">
+                <div class="flex items-center justify-between text-xs">
+                    <span class="font-bold uppercase tracking-wider text-gold-300">Resumen de su Selección</span>
+                    <span id="banco-subtotal-valor" class="font-luxury font-bold text-sm text-white">S/ 0.00</span>
+                </div>
+                <div id="banco-lista-items" class="text-[11px] text-stone-400 space-y-1 border-t border-stone-800 pt-2"></div>
+            </div>
+            
+            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+                Elija la entidad bancaria de su preferencia para abonar su compra o separar su instrumento. Utilice los botones de copiado rápido para evitar errores:
+            </p>
+
+            <!-- Contenedor Dinámico de Múltiples Cuentas Bancarias -->
+            <div id="contenedor-bancos-lista" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Renderizado dinámicamente desde CONFIGURACION_TIENDA.bancos -->
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-gold-950/30 border border-gold-500/20 text-xs text-gold-200 leading-relaxed">
+                <i class="fa-solid fa-circle-info mr-1.5 text-gold-400"></i>
+                Una vez realizada la transferencia, envíenos su comprobante por WhatsApp o correo electrónico para validar el abono y coordinar la calibración y envío.
+            </div>
+
+            <!-- Botones de Confirmación de Comprobante -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <button onclick="enviarComprobanteWhatsApp()" class="py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Enviar Comprobante por WhatsApp</span>
+                </button>
+                <a id="enlace-correo-comprobante" href="mailto:ventas@casaluthierycuerdas.com?subject=Constancia%20de%20Transferencia%20-%20Casa%20Luthier%20%26%20Cuerdas" class="py-3 px-4 rounded-xl bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors">
+                    <i class="fa-regular fa-envelope text-gold-400"></i>
+                    <span>Confirmar por Correo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificación Flotante (Toast) -->
+    <div id="notificacion-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-cardBg border border-gold-500/60 text-white px-5 py-3.5 rounded-xl shadow-2xl flex items-center space-x-3 max-w-sm">
+        <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+        <div>
+            <span id="toast-titulo" class="block font-luxury font-bold text-xs tracking-wider text-gold-300">ACCIÓN COMPLETADA</span>
+            <span id="toast-mensaje" class="text-xs text-stone-300">Instrumento agregado a su cotización.</span>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         LÓGICA DE CATÁLOGO, PRECIOS HÍBRIDOS, CARRITO Y BANCOS
+         ===================================================================== -->
+    <script>
+        // Base de datos de instrumentos (Sistema Híbrido: Precio Exacto o Bajo Cotización)
+        // - Si 'precio' es un número (ej. 3450), se muestra formateado y se suma al carrito.
+        // - Si 'precio' es null, se muestra 'etiquetaCotizacion' y se suma como artículo por cotizar.
+        const CATALOGO_INSTRUMENTOS = [
+            {
+                id: 1,
+                nombre: "Guitarra Eléctrica Custom Shop 'Sovereign Flame'",
+                categoria: "electrica",
+                precio: null,
+                moneda: "S/",
+                etiquetaCotizacion: "Cotización personalizada",
+                etiquetaDestacada: "Edición de Taller",
+                imagen: "https://images.unsplash.com/photo-1550985516-eec71459c5d0?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Cuerpo de caoba seleccionada con tapa de arce flameado AAA, mástil perfil C satinado y cápsulas humbucker bobinadas a mano."
+            },
+            {
+                id: 2,
+                nombre: "Guitarra Electroacústica Grand Auditorium 'Solstice'",
+                categoria: "electroacustica",
+                precio: 3450,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Alta Gama",
+                imagen: "https://images.unsplash.com/photo-1510915361894-db8b6010cb61?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Tapa maciza de abeto Sitka grado maestro, aros y fondo de palisandro de la India, previo acústico de estudio con micrófono interno."
+            },
+            {
+                id: 3,
+                nombre: "Guitarra Clásica de Concierto 'Alhambra Maestro'",
+                categoria: "clasica",
+                precio: null,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio bajo consulta",
+                etiquetaDestacada: "Lutería Tradicional",
+                imagen: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Construcción artesanal española con tapa de cedro rojo canadiense, diapasón de ébano africano y acabado en goma laca natural."
+            },
+            {
+                id: 4,
+                nombre: "Guitarra Eléctrica Semi-Hollow 'Bluesman Royale'",
+                categoria: "electrica",
+                precio: 4190,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Colección Vintage",
+                imagen: "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Bloque central de arce sólido para sustain prolongado sin acoples, puente Tune-O-Matic de precisión y clavijeros de bloqueo."
+            },
+            {
+                id: 5,
+                nombre: "Bajo Eléctrico 5 Cuerdas 'Monarch Burl'",
+                categoria: "bajo",
+                precio: 3890,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Serie Profesional",
+                imagen: "https://images.unsplash.com/photo-1563381361-b5944cbade43?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Construcción neck-through de 5 piezas, tapa de raíz de álamo, ecualizador activo de 3 bandas y pastillas dual-coil silenciosas."
+            },
+            {
+                id: 6,
+                nombre: "Guitarra Electroacústica Dreadnought 'Heritage 1964'",
+                categoria: "electroacustica",
+                precio: 2980,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Sonido de Estudio",
+                imagen: "https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Varetaje en X festoneado a mano, proyección grave profunda y claridad cristalina en agudos. Incluye estuche rígido."
+            },
+            {
+                id: 7,
+                nombre: "Guitarra Flamenca Blanca 'Compás de Triana'",
+                categoria: "clasica",
+                precio: null,
+                moneda: "S/",
+                etiquetaCotizacion: "Consultar disponibilidad y valor",
+                etiquetaDestacada: "Edición Concierto",
+                imagen: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Aros y fondo de ciprés español curado, acción baja de respuesta inmediata, golpeadores transparentes instalados de taller."
+            },
+            {
+                id: 8,
+                nombre: "Violín de Concierto 4/4 'Stradivarius Heritage'",
+                categoria: "otros",
+                precio: 2650,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Cuerdas Sinfónicas",
+                imagen: "https://images.unsplash.com/photo-1612225330812-01a9c6b355ec?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Tallado a mano en abeto alpino y arce flameado europeo envejecido, clavijas y cordal de ébano, puente francés ajustado."
+            },
+            {
+                id: 9,
+                nombre: "Piano Digital de Escenario 88 Teclas 'Grand Stage Pro'",
+                categoria: "otros",
+                precio: 5490,
+                moneda: "S/",
+                etiquetaCotizacion: "Precio directo",
+                etiquetaDestacada: "Teclados de Escenario",
+                imagen: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=900&q=80",
+                especificaciones: "Teclado contrapesado con acción de martillo y escape en madera, muestreo binaural de pianos de cola de concierto."
+            }
+        ];
+
+        // Estado de la aplicación
+        let carritoCotizacion = [];
+        let categoriaActual = 'todos';
+
+        // Formateador de moneda profesional (ej. S/ 3,450.00)
+        function formatearMoneda(monto, moneda = CONFIGURACION_TIENDA.monedaPorDefecto) {
+            return `${moneda} ${Number(monto).toLocaleString('en-US', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            })}`;
+        }
+
+        // Inicialización al cargar la página
+        window.onload = function() {
+            renderizarListaBancos();
+            renderizarCatalogo();
+            actualizarInterfazCarrito();
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        };
+
+        // Renderizar tarjetas de múltiples cuentas bancarias con botones de copiado rápido
+        function renderizarListaBancos() {
+            const contenedorBancos = document.getElementById('contenedor-bancos-lista');
+            if (!contenedorBancos) return;
+
+            contenedorBancos.innerHTML = '';
+
+            CONFIGURACION_TIENDA.bancos.forEach((bancoObj, idx) => {
+                const tarjetaBanco = document.createElement('div');
+                tarjetaBanco.className = "p-4 rounded-xl bg-stone-900/95 border border-stone-800 hover:border-gold-500/40 transition-colors flex flex-col justify-between space-y-3 text-xs";
+                tarjetaBanco.innerHTML = `
+                    <div class="border-b border-stone-800 pb-2.5">
+                        <span class="block font-luxury font-bold text-sm text-white">${bancoObj.banco}</span>
+                        <span class="block text-[11px] text-gold-400 mt-0.5">${bancoObj.tipoCuenta}</span>
+                    </div>
+
+                    <div class="space-y-2.5">
+                        <div>
+                            <span class="block text-[10px] text-stone-400 uppercase tracking-wider">Titular / RUC</span>
+                            <span class="font-semibold text-stone-200">${bancoObj.titular}</span>
+                            ${bancoObj.ruc ? `<span class="block text-[11px] text-stone-400 font-mono">RUC: ${bancoObj.ruc}</span>` : ''}
+                        </div>
+
+                        <div class="flex items-center justify-between gap-2 bg-stone-950/80 p-2.5 rounded-lg border border-stone-800/80">
+                            <div class="min-w-0">
+                                <span class="block text-[10px] text-stone-400 uppercase tracking-wider">N° de Cuenta</span>
+                                <span id="banco-cta-${idx}" class="font-mono font-bold text-gold-400 text-xs sm:text-sm break-all">${bancoObj.numeroCuenta}</span>
+                            </div>
+                            <button onclick="copiarDato('banco-cta-${idx}', 'N° de Cuenta (${bancoObj.banco})')" class="px-2.5 py-1.5 rounded-lg bg-stone-800 hover:bg-gold-500 hover:text-darkBg text-stone-300 font-semibold text-[11px] flex items-center space-x-1 transition-colors shrink-0">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copiar</span>
+                            </button>
+                        </div>
+
+                        <div class="flex items-center justify-between gap-2 bg-stone-950/80 p-2.5 rounded-lg border border-stone-800/80">
+                            <div class="min-w-0">
+                                <span class="block text-[10px] text-stone-400 uppercase tracking-wider">CCI / Referencia</span>
+                                <span id="banco-cci-${idx}" class="font-mono font-semibold text-stone-200 text-xs break-all">${bancoObj.cci}</span>
+                            </div>
+                            <button onclick="copiarDato('banco-cci-${idx}', 'CCI (${bancoObj.banco})')" class="px-2.5 py-1.5 rounded-lg bg-stone-800 hover:bg-gold-500 hover:text-darkBg text-stone-300 font-semibold text-[11px] flex items-center space-x-1 transition-colors shrink-0">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copiar</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                contenedorBancos.appendChild(tarjetaBanco);
+            });
+
+            const enlaceCorreo = document.getElementById('enlace-correo-comprobante');
+            if (enlaceCorreo) {
+                enlaceCorreo.href = `mailto:${CONFIGURACION_TIENDA.correoContacto}?subject=Constancia%20de%20Transferencia%20-%20${encodeURIComponent(CONFIGURACION_TIENDA.nombreTienda)}`;
+            }
+        }
+
+        // Obtener etiqueta legible de categoría
+        function obtenerNombreCategoria(cat) {
+            const mapa = {
+                'electrica': 'Guitarra Eléctrica',
+                'electroacustica': 'Guitarra Electroacústica',
+                'clasica': 'Guitarra Clásica / Flamenca',
+                'bajo': 'Bajo Profesional',
+                'otros': 'Cuerdas, Pianos y Percusión'
+            };
+            return mapa[cat] || 'Instrumento Musical';
+        }
+
+        // Cambiar filtro de categoría
+        function seleccionarCategoria(categoria) {
+            categoriaActual = categoria;
+
+            document.querySelectorAll('.btn-categoria').forEach(btn => {
+                btn.className = "btn-categoria px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all bg-stone-900 border border-stone-800 text-stone-300 hover:border-gold-400/50";
+            });
+
+            const btnActivo = document.getElementById(`cat-${categoria}`);
+            if (btnActivo) {
+                btnActivo.className = "btn-categoria px-5 py-2.5 rounded-xl text-xs font-bold tracking-wider uppercase transition-all bg-gold-500 text-darkBg shadow-md shadow-gold-500/20";
+            }
+
+            aplicarFiltros();
+        }
+
+        // Restablecer búsqueda y categorías
+        function restablecerFiltros() {
+            document.getElementById('buscador-instrumentos').value = '';
+            seleccionarCategoria('todos');
+        }
+
+        // Filtrar y renderizar tarjetas del catálogo
+        function aplicarFiltros() {
+            renderizarCatalogo();
+        }
+
+        function renderizarCatalogo() {
+            const cuadricula = document.getElementById('cuadricula-productos');
+            const sinResultados = document.getElementById('sin-resultados');
+            const textoBusqueda = document.getElementById('buscador-instrumentos').value.toLowerCase().trim();
+
+            const filtrados = CATALOGO_INSTRUMENTOS.filter(item => {
+                const coincideCategoria = categoriaActual === 'todos' || item.categoria === categoriaActual;
+                const coincideTexto = !textoBusqueda || 
+                    item.nombre.toLowerCase().includes(textoBusqueda) || 
+                    item.especificaciones.toLowerCase().includes(textoBusqueda) ||
+                    obtenerNombreCategoria(item.categoria).toLowerCase().includes(textoBusqueda);
+                return coincideCategoria && coincideTexto;
+            });
+
+            cuadricula.innerHTML = '';
+
+            if (filtrados.length === 0) {
+                sinResultados.classList.remove('hidden');
+                return;
+            } else {
+                sinResultados.classList.add('hidden');
+            }
+
+            filtrados.forEach(instrumento => {
+                const tienePrecioFijo = typeof instrumento.precio === 'number' && !isNaN(instrumento.precio);
+                const etiquetaValor = tienePrecioFijo
+                    ? formatearMoneda(instrumento.precio, instrumento.moneda)
+                    : (instrumento.etiquetaCotizacion || "Cotización personalizada");
+                const subtituloValor = tienePrecioFijo ? "Precio de Sala" : "Valoración";
+                const textoBoton = tienePrecioFijo ? "Agregar" : "Cotizar";
+
+                const tarjeta = document.createElement('article');
+                tarjeta.className = "bg-cardBg border border-stone-800 rounded-2xl overflow-hidden hover:border-gold-500/50 transition-all duration-300 flex flex-col group shadow-lg";
+                tarjeta.innerHTML = `
+                    <div class="relative h-64 overflow-hidden bg-stone-900">
+                        <img 
+                            src="${instrumento.imagen}" 
+                            alt="${instrumento.nombre}" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onerror="this.src='https://placehold.co/800x600/171412/c59d52?text=Casa+Luthier+%26+Cuerdas'"
+                        >
+                        <div class="absolute top-4 left-4 bg-darkBg/85 backdrop-blur-md border border-gold-500/30 text-gold-300 text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                            ${instrumento.etiquetaDestacada}
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div class="space-y-2">
+                            <span class="text-[11px] text-gold-400 font-semibold tracking-widest uppercase">${obtenerNombreCategoria(instrumento.categoria)}</span>
+                            <h3 class="font-luxury text-lg font-bold text-white group-hover:text-gold-300 transition-colors leading-snug">${instrumento.nombre}</h3>
+                            <p class="text-stone-400 text-xs leading-relaxed">${instrumento.especificaciones}</p>
+                        </div>
+                        <div class="pt-4 border-t border-stone-800/80 flex items-center justify-between gap-3">
+                            <div>
+                                <span class="block text-[10px] text-stone-500 uppercase tracking-wider">${subtituloValor}</span>
+                                <span class="${tienePrecioFijo ? 'text-base font-luxury font-bold text-white' : 'text-xs font-bold text-gold-400'}">${etiquetaValor}</span>
+                            </div>
+                            <button onclick="agregarAlCarrito(${instrumento.id})" class="px-4 py-2.5 rounded-xl bg-stone-900 border border-stone-700 hover:border-gold-400 hover:bg-gold-500 hover:text-darkBg text-stone-200 text-xs font-bold tracking-wider uppercase transition-all flex items-center space-x-2 shrink-0">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>${textoBoton}</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                cuadricula.appendChild(tarjeta);
+            });
+        }
+
+        // Calcular totales híbridos del carrito
+        function calcularTotalesCarrito() {
+            let subtotalFijo = 0;
+            let unidadesConPrecio = 0;
+            let unidadesPorCotizar = 0;
+            let totalUnidades = 0;
+
+            carritoCotizacion.forEach(item => {
+                totalUnidades += item.cantidad;
+                if (typeof item.precio === 'number' && !isNaN(item.precio)) {
+                    subtotalFijo += item.precio * item.cantidad;
+                    unidadesConPrecio += item.cantidad;
+                } else {
+                    unidadesPorCotizar += item.cantidad;
+                }
+            });
+
+            return {
+                subtotalFijo,
+                unidadesConPrecio,
+                unidadesPorCotizar,
+                totalUnidades
+            };
+        }
+
+        // Funciones del Carrito de Cotización y Compra
+        function agregarAlCarrito(idInstrumento) {
+            const instrumento = CATALOGO_INSTRUMENTOS.find(item => item.id === idInstrumento);
+            if (!instrumento) return;
+
+            const existente = carritoCotizacion.find(item => item.id === idInstrumento);
+            if (existente) {
+                existente.cantidad += 1;
+            } else {
+                carritoCotizacion.push({ ...instrumento, cantidad: 1 });
+            }
+
+            actualizarInterfazCarrito();
+            const esFijo = typeof instrumento.precio === 'number' && !isNaN(instrumento.precio);
+            mostrarNotificacion(
+                esFijo ? "INSTRUMENTO AGREGADO" : "AÑADIDO A COTIZACIÓN",
+                `"${instrumento.nombre}" se agregó a su carrito.`
+            );
+        }
+
+        function cambiarCantidad(idInstrumento, delta) {
+            const item = carritoCotizacion.find(i => i.id === idInstrumento);
+            if (!item) return;
+
+            item.cantidad += delta;
+            if (item.cantidad <= 0) {
+                carritoCotizacion = carritoCotizacion.filter(i => i.id !== idInstrumento);
+            }
+            actualizarInterfazCarrito();
+        }
+
+        function eliminarDelCarrito(idInstrumento) {
+            carritoCotizacion = carritoCotizacion.filter(i => i.id !== idInstrumento);
+            actualizarInterfazCarrito();
+        }
+
+        function actualizarInterfazCarrito() {
+            const badge = document.getElementById('contador-carrito');
+            const resumenTotal = document.getElementById('resumen-cantidad-total');
+            const resumenSubtotal = document.getElementById('resumen-subtotal');
+            const notaCotizacion = document.getElementById('resumen-nota-cotizacion');
+            const textoNotaCotizacion = document.getElementById('texto-nota-cotizacion');
+            const contenedor = document.getElementById('lista-items-carrito');
+
+            const totales = calcularTotalesCarrito();
+            badge.innerText = totales.totalUnidades;
+            resumenTotal.innerText = `${totales.totalUnidades} ${totales.totalUnidades === 1 ? 'unidad' : 'unidades'}`;
+
+            // Actualizar subtotal y aclaración de artículos por cotizar
+            if (totales.unidadesConPrecio > 0) {
+                resumenSubtotal.innerText = formatearMoneda(totales.subtotalFijo);
+            } else if (totales.unidadesPorCotizar > 0) {
+                resumenSubtotal.innerText = "Por cotizar";
+            } else {
+                resumenSubtotal.innerText = formatearMoneda(0);
+            }
+
+            if (totales.unidadesPorCotizar > 0) {
+                notaCotizacion.classList.remove('hidden');
+                const palabraArticulo = totales.unidadesPorCotizar === 1 ? 'artículo por cotizar' : 'artículos por cotizar';
+                textoNotaCotizacion.innerText = totales.unidadesConPrecio > 0
+                    ? `+ ${totales.unidadesPorCotizar} ${palabraArticulo} (valor por confirmar en asesoría)`
+                    : `${totales.unidadesPorCotizar} ${palabraArticulo} (valor por confirmar en asesoría)`;
+            } else {
+                notaCotizacion.classList.add('hidden');
+            }
+
+            if (carritoCotizacion.length === 0) {
+                contenedor.innerHTML = `
+                    <div class="text-center py-16 space-y-3">
+                        <div class="w-16 h-16 rounded-full bg-stone-900 border border-stone-800 flex items-center justify-center mx-auto text-stone-600 text-2xl">
+                            <i class="fa-solid fa-guitar"></i>
+                        </div>
+                        <h4 class="font-luxury text-sm font-bold text-stone-300">Su carrito está vacío</h4>
+                        <p class="text-xs text-stone-400 max-w-xs mx-auto">
+                            Explore nuestro catálogo y presione "Agregar" o "Cotizar" en los instrumentos de su interés para armar su pedido.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            contenedor.innerHTML = '';
+            carritoCotizacion.forEach(item => {
+                const tienePrecioFijo = typeof item.precio === 'number' && !isNaN(item.precio);
+                const textoPrecioFila = tienePrecioFijo
+                    ? `${formatearMoneda(item.precio, item.moneda)} c/u • Total: ${formatearMoneda(item.precio * item.cantidad, item.moneda)}`
+                    : `${item.etiquetaCotizacion || 'Cotización personalizada'} (valor por confirmar)`;
+
+                const fila = document.createElement('div');
+                fila.className = "p-4 rounded-xl bg-stone-900/90 border border-stone-800 flex items-center justify-between gap-3";
+                fila.innerHTML = `
+                    <img src="${item.imagen}" alt="${item.nombre}" class="w-16 h-16 rounded-lg object-cover shrink-0">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-luxury font-bold text-xs text-white truncate" title="${item.nombre}">${item.nombre}</h4>
+                        <span class="block text-[11px] ${tienePrecioFijo ? 'text-stone-200 font-semibold' : 'text-gold-400'} mt-0.5">${textoPrecioFila}</span>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <button onclick="cambiarCantidad(${item.id}, -1)" aria-label="Disminuir cantidad" class="w-6 h-6 rounded-md bg-stone-800 hover:bg-stone-700 text-stone-300 flex items-center justify-center text-[10px]">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <span class="text-xs font-bold text-white px-1">${item.cantidad}</span>
+                            <button onclick="cambiarCantidad(${item.id}, 1)" aria-label="Aumentar cantidad" class="w-6 h-6 rounded-md bg-stone-800 hover:bg-stone-700 text-stone-300 flex items-center justify-center text-[10px]">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button onclick="eliminarDelCarrito(${item.id})" aria-label="Eliminar instrumento" class="p-2 text-stone-500 hover:text-red-400 transition-colors">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                    </button>
+                `;
+                contenedor.appendChild(fila);
+            });
+        }
+
+        // Control de Modales y Menú Móvil
+        function abrirCerrarCarrito(mostrar) {
+            const panel = document.getElementById('panel-carrito');
+            if (mostrar) {
+                panel.classList.remove('hidden');
+            } else {
+                panel.classList.add('hidden');
+            }
+        }
+
+        function abrirModalBanco() {
+            const resumenBanco = document.getElementById('resumen-banco-carrito');
+            const bancoSubtotalValor = document.getElementById('banco-subtotal-valor');
+            const bancoListaItems = document.getElementById('banco-lista-items');
+
+            if (carritoCotizacion.length > 0) {
+                const totales = calcularTotalesCarrito();
+                resumenBanco.classList.remove('hidden');
+
+                let textoResumenSuperior = totales.unidadesConPrecio > 0
+                    ? formatearMoneda(totales.subtotalFijo)
+                    : "Por cotizar";
+
+                if (totales.unidadesConPrecio > 0 && totales.unidadesPorCotizar > 0) {
+                    textoResumenSuperior += ` (+ ${totales.unidadesPorCotizar} por cotizar)`;
+                }
+                bancoSubtotalValor.innerText = textoResumenSuperior;
+
+                bancoListaItems.innerHTML = carritoCotizacion.map(item => {
+                    const tienePrecio = typeof item.precio === 'number' && !isNaN(item.precio);
+                    const detallePrecio = tienePrecio
+                        ? formatearMoneda(item.precio * item.cantidad, item.moneda)
+                        : (item.etiquetaCotizacion || 'Cotización personalizada');
+                    return `<div class="flex justify-between gap-2">
+                        <span class="truncate">• ${item.cantidad}x ${item.nombre}</span>
+                        <span class="font-semibold ${tienePrecio ? 'text-stone-200' : 'text-gold-400'} shrink-0">${detallePrecio}</span>
+                    </div>`;
+                }).join('');
+            } else {
+                resumenBanco.classList.add('hidden');
+            }
+
+            document.getElementById('modal-banco').classList.remove('hidden');
+        }
+
+        function cerrarModalBanco() {
+            document.getElementById('modal-banco').classList.add('hidden');
+        }
+
+        function alternarMenuMovil() {
+            document.getElementById('menu-movil').classList.toggle('hidden');
+        }
+
+        // Copiar datos bancarios al portapapeles de forma segura
+        // Opción A: Enviar pedido / cotización detallada por WhatsApp
+        function finalizarPorWhatsApp() {
+            if (carritoCotizacion.length === 0) {
+                mostrarNotificacion("CARRITO VACÍO", "Agregue al menos un instrumento antes de enviar su solicitud.");
+                return;
+            }
+
+            const totales = calcularTotalesCarrito();
+            let mensaje = `Hola *${CONFIGURACION_TIENDA.nombreTienda}*, deseo confirmar disponibilidad y gestionar el siguiente pedido:\n\n`;
+
+            carritoCotizacion.forEach((item, indice) => {
+                const tienePrecio = typeof item.precio === 'number' && !isNaN(item.precio);
+                const infoPrecio = tienePrecio
+                    ? `${formatearMoneda(item.precio, item.moneda)} c/u (Subtotal: ${formatearMoneda(item.precio * item.cantidad, item.moneda)})`
+                    : `${item.etiquetaCotizacion || 'Cotización personalizada'} (valor por confirmar)`;
+
+                mensaje += `${indice + 1}. *${item.nombre}*\n   • Cantidad: ${item.cantidad}\n   • Valor: ${infoPrecio}\n`;
+            });
+
+            mensaje += `\n*Resumen:*\n`;
+            if (totales.unidadesConPrecio > 0) {
+                mensaje += `• Subtotal artículos con precio fijo: *${formatearMoneda(totales.subtotalFijo)}*\n`;
+            }
+            if (totales.unidadesPorCotizar > 0) {
+                mensaje += `• Artículos adicionales por cotizar: *${totales.unidadesPorCotizar} ${totales.unidadesPorCotizar === 1 ? 'unidad' : 'unidades'}*\n`;
+            }
+
+            mensaje += `\nQuedo atento para coordinar el pago y la entrega. Muchas gracias.`;
+
+            const urlWhatsApp = `https://wa.me/${CONFIGURACION_TIENDA.numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        // Contacto directo sin carrito
+        function contactarAsesorDirecto() {
+            const mensaje = `Hola *${CONFIGURACION_TIENDA.nombreTienda}*, me gustaría recibir asesoría personalizada sobre sus guitarras e instrumentos de alta gama.`;
+            const urlWhatsApp = `https://wa.me/${CONFIGURACION_TIENDA.numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        // Enviar comprobante bancario por WhatsApp
+        function enviarComprobanteWhatsApp() {
+            let mensaje = `Hola *${CONFIGURACION_TIENDA.nombreTienda}*, adjunto mi constancia de transferencia bancaria para confirmar mi pedido/reserva.`;
+            if (carritoCotizacion.length > 0) {
+                const totales = calcularTotalesCarrito();
+                mensaje += `\n\n*Detalle de mi selección:*\n`;
+                carritoCotizacion.forEach((item, idx) => {
+                    const tienePrecio = typeof item.precio === 'number' && !isNaN(item.precio);
+                    const etiqueta = tienePrecio
+                        ? formatearMoneda(item.precio * item.cantidad, item.moneda)
+                        : 'Por cotizar';
+                    mensaje += `${idx + 1}. ${item.nombre} (x${item.cantidad}) — ${etiqueta}\n`;
+                });
+                if (totales.unidadesConPrecio > 0) {
+                    mensaje += `\n*Subtotal abonable:* ${formatearMoneda(totales.subtotalFijo)}`;
+                }
+                if (totales.unidadesPorCotizar > 0) {
+                    mensaje += `\n*Nota:* + ${totales.unidadesPorCotizar} artículo(s) por cotizar.`;
+                }
+            }
+            const urlWhatsApp = `https://wa.me/${CONFIGURACION_TIENDA.numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        // Notificación visual temporal
+        function mostrarNotificacion(titulo, mensaje) {
+            const toast = document.getElementById('notificacion-toast');
+            document.getElementById('toast-titulo').innerText = titulo;
+            document.getElementById('toast-mensaje').innerText = mensaje;
+
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3400);
+        }
+    </script>
+</body>
+</html>
